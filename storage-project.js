@@ -1,9 +1,28 @@
 window.addEventListener("DOMContentLoaded", (event) => {
 
 
+  const showCart = () => {
+    const shoppingCart = document.getElementById('shopping-cart');
+    let eats = '';
+    // const eats = items.value;
+
+    for(let i = 0; i < localStorage.length; i++) {
+      let food = localStorage.key(i);
+      let amount = localStorage.getItem(food);
+      eats = `${amount} ${food}`;
+    }
+
+    return shoppingCart.innerHTML = eats;
+  };
+
+  showCart();
+
+=======
+
   // const showCart = () => {
   
   // };
+
 
   const storeItem = () => {
     //created a variable that stores the button(by ele id)
@@ -25,11 +44,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // };
 
 });
-<<<<<<< HEAD
+
 
 
 
 
 =======
 // test comment
->>>>>>> origin/testaaron
+
