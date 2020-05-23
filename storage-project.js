@@ -46,6 +46,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
       //At this point we use the setItem method to Store the items and their respective quantities in Local Storage
       localStorage.setItem(items, quantity);
     });
+<<<<<<< Updated upstream
+=======
+    showCart();
+  };
+>>>>>>> Stashed changes
 
     // console.log(items.value);
     // console.log(quantity.value);
@@ -56,10 +61,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // };
 
 });
+<<<<<<< Updated upstream
 
 
 
 
 
 
+=======
+>>>>>>> Stashed changes
 // test comment
